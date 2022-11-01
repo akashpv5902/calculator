@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <!-- CSS only -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+<!-- JavaScript Bundle with Popper -->
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-OERcA2EqjJCMA+/3y+gxIOqMEjwtxJY7qPCqsdltbNJuaOe923+mo//f6V8Qbsw3" crossorigin="anonymous"></script>
+<link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <center>
+        <h1>CALUCLATOR</h1>
+    <div class="main">
+        <input type="text" id="result" class="inp">
+        <div class="but"><button type="button" onclick="clearBox()" class="btn btn-secondary ms-2">AC</button>
+            <button type="button" onclick="removeLast()"  class="btn btn-secondary">C</button>
+            <button type="button" onclick="displayNum()" class="btn btn-secondary">%</button>
+            <button type="button" onclick="displayNum('/')" class="btn btn-warning">÷</button>
+        </div>
+        <div class="but"><button type="button" onclick="displayNum(7)" class="btn btn-outline-dark ms-2">7</button>
+            <button type="button" onclick="displayNum(8)" class="btn btn-outline-dark">8</button>
+            <button type="button" onclick="displayNum(9)" class="btn btn-outline-dark">9</button>
+            <button type="button" onclick="displayNum('*')" class="btn btn-warning">X</button>
+        </div>
+        <div class="but"><button type="button" onclick="displayNum(4)" class="btn btn-outline-dark ms-2">4</button>
+            <button type="button" onclick="displayNum(5)" class="btn btn-outline-dark">5</button>
+            <button type="button" onclick="displayNum(6)" class="btn btn-outline-dark">6</button>
+            <button type="button" onclick="displayNum('-')" class="btn btn-warning">-</button>
+        </div>
+        <div class="but"><button type="button" onclick="displayNum(1)" class="btn btn-outline-dark ms-2">1</button>
+            <button type="button" onclick="displayNum(2)" class="btn btn-outline-dark">2</button>
+            <button type="button" onclick="displayNum(3)" class="btn btn-outline-dark">3</button>
+            <button type="button" onclick="displayNum('+')" class="btn btn-warning">+</button>
+        </div>
+        <div class="but"><button type="button" onclick="displayNum(0)" class="btn btn-outline-dark ms-2 " id="zero">0</button>
+
+            <button type="button" onclick="displayNum('.')" class="btn btn-outline-dark">.</button>
+            <button type="button" onclick="evaluateExpression()" class="btn btn-warning">=</button>
+        </div>
+    </center>
+        
+</body>
+<script src="script.js"></script>
+</html>
